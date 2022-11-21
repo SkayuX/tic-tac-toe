@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 10px;
+}
+
+.board-square {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  outline: 3px black solid;
+  cursor: pointer;
+}
+
+.board-mark {
+  cursor: default;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}
+
+.restart-btn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 3px solid rgb(20, 20, 20);
+  border-radius: 0.375rem;
+  background-color: rgb(20, 20, 20);
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
